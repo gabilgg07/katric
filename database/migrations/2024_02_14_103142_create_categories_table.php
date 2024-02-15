@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->unsignedBigInteger('parent_id')->default(0);
+            $table->string('icon_path')->nullable();
             $table->boolean('is_deleted')->default(0);
             $table->timestamps();
         });
